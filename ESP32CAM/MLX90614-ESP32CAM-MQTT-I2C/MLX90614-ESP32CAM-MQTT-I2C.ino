@@ -1,3 +1,4 @@
+
 /*
  * Programa completo de IoT con sensor de temperatura Infrarrojo
  * por: Hugo Escalpelo
@@ -16,7 +17,7 @@
 
 //Bibliotecas
 #include <WiFi.h>  // Biblioteca para el control de WiFi
-//#include <PubSubClient.h> //Biblioteca para conexion MQTT
+#include <PubSubClient.h> //Biblioteca para conexion MQTT
 #include <Adafruit_MLX90614.h>
 #include <Wire.h>
 
@@ -25,13 +26,9 @@ const char* ssid = "CASADOMXC";  // Aquí debes poner el nombre de tu red
 const char* password = "kn72FCkggp";  // Aquí debes poner la contraseña de tu red
 
 //Datos del broker MQTT
-<<<<<<< HEAD
-const char* mqtt_server = "192.168.1.109"; // Si estas en una red local, coloca la IP asignada, en caso contrario, coloca la IP publica
-IPAddress server(192,168,1,109);
-=======
-//const char* mqtt_server = "192.168.15.27"; // Si estas en una red local, coloca la IP asignada, en caso contrario, coloca la IP publica
-//IPAddress server(192,168,15,27);
->>>>>>> e2bdc8a1816454648cd8ea6466deb9f598c6f935
+//const char* mqtt_server = "192.168.1.109"; // Si estas en una red local, coloca la IP asignada, en caso contrario, coloca la IP publica
+//IPAddress server(192,168,1,109);
+
 
 // Objetos
 WiFiClient espClient; // Este objeto maneja los datos de conexion WiFi
